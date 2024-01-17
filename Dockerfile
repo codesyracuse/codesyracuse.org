@@ -1,11 +1,9 @@
 # base node image
 FROM node:20-bullseye-slim as base
 
-# set for base and all layer that inherit from it
 ENV NODE_ENV=production
 
-# Install openssl for Prisma
-RUN apt-get update && apt-get install -y openssl
+RUN apt-get update && apt-get install -y openssl ca-certificates
 
 # Install all node_modules, including dev dependencies
 FROM base as deps
@@ -49,9 +47,6 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY --from=production-deps /app/node_modules /app/node_modules
-
-# Uncomment if using Prisma
-# COPY --from=build /app/node_modules/.prisma /app/node_modules/.prisma
 
 COPY --from=build /app/build /app/build
 COPY --from=build /app/public /app/public
