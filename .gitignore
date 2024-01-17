@@ -1,12 +1,12 @@
 node_modules
 
+/.DS_Store
 /.cache
 /build
 /public/build
 .env
-
-# Sentry Config File
-.sentryclirc
+/app/styles
+/.vscode
 
 # Sentry Config File
 .sentryclirc
