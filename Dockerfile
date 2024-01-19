@@ -2,6 +2,7 @@
 FROM node:20-bullseye-slim as base
 
 ENV NODE_ENV=production
+ARG SENTRY_AUTH_TOKEN=123
 
 RUN apt-get update && apt-get install -y openssl ca-certificates
 
