@@ -42,8 +42,8 @@ export default defineType({
       initialValue: 'Image',
       options: {
         list: [{title: 'Default Component', value: 'Image'}],
+        list: [{title: 'Image with no border', value: 'NoBorderImage'}],
       },
-      hidden: true,
     }),
   ],
   preview: {

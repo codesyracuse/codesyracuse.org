@@ -19,16 +19,10 @@ export default {
   fields: [
     {
       name: 'internalTitle',
-      title: 'Internal Title (used in page title for search engines)',
+      title: 'Page Title (displayed in browser tabs, important for search engines)',
       type: 'string',
       group: 'seo',
       validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'title',
-      title: 'Page Title (optional)',
-      type: 'string',
-      group: 'sections',
     },
     {
       name: 'metaDescription',
@@ -52,14 +46,15 @@ export default {
       group: 'sections',
       sortable: true,
       of: [
+        {type: 'pageHeader'},
         {type: 'content'},
+        {type: 'twoColumnContent'},
         {type: 'donation'},
         {type: 'faq'},
         {type: 'hero'},
         {type: 'inlineImage'},
         {type: 'teamMembers'},
         {type: 'testimonials'},
-        {type: 'twoColumnContent'},
       ],
     },
   ],

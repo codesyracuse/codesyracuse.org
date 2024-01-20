@@ -15,6 +15,7 @@ import navigationLink from './objects/navigationLink'
 import navigationSection from './objects/navigationSection'
 import content from './sections/content'
 import page from './documents/page'
+import pageHeader from './sections/pageHeader'
 import person from './documents/person'
 import qa from './objects/qa'
 import siteConfig from './documents/siteConfig'
@@ -36,6 +37,7 @@ export const schemaTypes = [
   navigationLink,
   navigationSection,
   page,
+  pageHeader,
   person,
   qa,
   siteConfig,

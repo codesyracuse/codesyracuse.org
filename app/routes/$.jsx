@@ -37,13 +37,6 @@ export default function Index() {
 
   return (
     <div key={pageContent._id}>
-      {pageContent.title && (
-        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 ">
-          <h1 className="mt-4 block text-center text-3xl font-extrabold leading-8 tracking-tight text-brand-dark sm:text-4xl">
-            {pageContent.title}
-          </h1>
-        </div>
-      )}
       <div id="sections">
         {pageContent.sections?.map((section) => (
           <Section key={section._key} {...section} />

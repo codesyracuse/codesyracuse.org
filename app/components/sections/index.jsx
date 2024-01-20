@@ -3,7 +3,7 @@ import { Donation } from "./Donation";
 import { Faq } from "./Faq";
 import { Features } from "./Features";
 import { Hero, BoringHero } from "./Hero";
-import { Image } from "./Image";
+import { Image, NoBorderImage  } from "./Image";
 import { TeamMembers } from "./TeamMembers";
 import { Testimonials } from "./Testimonials";
 import {
@@ -21,6 +21,7 @@ const COMPONENTS = {
   FullWidthContent: FullWidthContent,
   Hero: Hero,
   Image: Image,
+  NoBorderImage: NoBorderImage,
   TeamMembers: TeamMembers,
   Testimonials: Testimonials,
   TwoColumnContent: TwoColumnContent,

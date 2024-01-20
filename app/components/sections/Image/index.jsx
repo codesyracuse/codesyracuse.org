@@ -6,18 +6,26 @@ export function Image({ title, image }) {
   return (
     <Layout>
       {title && <SectionTitle title={title} />}
-      <figure className="mx-auto max-h-min max-w-xl">
-        <SanityImage
-          className="rounded-md mx-auto w-full object-scale-down shadow-lg lg:object-cover lg:object-center"
-          alt={image?.alt}
-          value={image.asset}
-        />
-        {image?.caption && (
-          <figcaption className="mt-1 text-md text-center italic text-gray-500">
-            <span>{image.caption}</span>
-          </figcaption>
-        )}
-      </figure>
+      <SanityImage
+        className="rounded-md mx-auto w-full object-scale-down shadow-lg lg:object-cover lg:object-center"
+        value={image.asset}
+        caption={image.caption}
+      />
     </Layout>
   );
 }
+
+export function NoBorderImage({ title, image }) {
+  return (
+    <Layout>
+      {title && <SectionTitle title={title} />}
+      <SanityImage
+        className="border-none shadow-none mx-auto w-full object-scale-down lg:object-cover lg:object-center"
+        value={image.asset}
+        caption={image.caption}
+      />
+    </Layout>
+  );
+}
+
+
