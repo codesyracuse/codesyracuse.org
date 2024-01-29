@@ -16,7 +16,7 @@ jobs:
     if: ${{ github.event.action != 'closed' }}
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.0
+        uses: styfle/cancel-workflow-action@0.12.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -40,7 +40,7 @@ jobs:
     if: ${{ github.event.action != 'closed' }}
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.0
+        uses: styfle/cancel-workflow-action@0.12.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -65,7 +65,7 @@ jobs:
     needs: [lint, vitest]
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.0
+        uses: styfle/cancel-workflow-action@0.12.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -121,7 +121,7 @@ jobs:
 
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.0
+        uses: styfle/cancel-workflow-action@0.12.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
