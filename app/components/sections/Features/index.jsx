@@ -1,10 +1,10 @@
 import ProseableText from "~/components/sanity/ProseableText";
-import { Layout } from "../layout";
+import { FullWidthLayout } from "../layout";
 import { SectionTitle } from "~/components/SectionTitle";
 
 export function Features({ title, content }) {
   return (
-    <Layout>
+    <FullWidthLayout>
       {false && title && <SectionTitle title={title} />}
       <div
         id="programs"
@@ -102,6 +102,6 @@ export function Features({ title, content }) {
           </div>
         </div>
       </div>
-    </Layout>
+    </FullWidthLayout>
   );
 }

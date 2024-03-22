@@ -90,9 +90,7 @@ export async function getPage(slug) {
             asset->
             },
           },
-          endorserDescription[]{
-            ${blockContentFields}
-          }
+          endorserDescription
         }
       },
     }
