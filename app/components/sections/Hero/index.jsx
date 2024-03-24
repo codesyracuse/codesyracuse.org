@@ -38,7 +38,7 @@ export function Hero({ image, title, description, cta, secondaryCta }) {
                 {cta && (
                   <a
                     href={pagePath(cta)}
-                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                    className="h-9 rounded-md bg-brand px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-dark"
                   >
                     {cta.target?.title || cta.title}
                   </a>
@@ -111,7 +111,7 @@ export function BoringHero({ image, title, description, cta, secondaryCta }) {
           {cta && (
             <a
               href={pagePath(cta)}
-              className="mt-8 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100"
+              className="h-9 rounded-md bg-brand px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-dark"
             >
               {cta.target?.title || cta.title}
             </a>

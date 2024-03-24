@@ -1,6 +1,3 @@
-import { pagePath } from "~/lib/utils";
-import { NavLink } from "@remix-run/react";
-
 const navigation = {
   social: [
     {

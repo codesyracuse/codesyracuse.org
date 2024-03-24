@@ -13,7 +13,7 @@ export function FullWidthLayout({ className, children }) {
   return (
     <div
       className={clsx(
-        "mx-auto px-2 py-4 first:pt-0 last:pb-0 md:py-8",
+        "mx-auto py-4 first:pt-0 last:pb-0 md:py-8",
         className,
       )}
     >

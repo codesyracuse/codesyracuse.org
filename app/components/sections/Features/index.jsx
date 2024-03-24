@@ -1,18 +1,12 @@
-import ProseableText from "~/components/sanity/ProseableText";
 import { FullWidthLayout } from "../layout";
-import { SectionTitle } from "~/components/SectionTitle";
 
 export function Features({ title, content }) {
   return (
     <FullWidthLayout>
-      {false && title && <SectionTitle title={title} />}
       <div
         id="programs"
-        className="relative bg-gray-50 px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24"
+        className="relative px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24"
       >
-        <div className="absolute inset-0">
-          <div className="h-1/3 bg-white sm:h-2/3"></div>
-        </div>
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
@@ -33,7 +27,7 @@ export function Features({ title, content }) {
                   alt=""
                 />
               </div>
-              <div className="flex flex-1 flex-col justify-between bg-white p-6">
+              <div className="flex flex-1 flex-col justify-between p-6">
                 <div className="flex-1">
                   <a href="/programs/mentorship" className="block">
                     <h3 className="mt-2 text-xl font-semibold leading-7 text-gray-900">
@@ -59,7 +53,7 @@ export function Features({ title, content }) {
                   alt=""
                 />
               </div>
-              <div className="flex flex-1 flex-col justify-between bg-white p-6">
+              <div className="flex flex-1 flex-col justify-between p-6">
                 <div className="flex-1">
                   <a href="/programs/events" className="block">
                     <h3 className="mt-2 text-xl font-semibold leading-7 text-gray-900">
@@ -85,7 +79,7 @@ export function Features({ title, content }) {
                   alt=""
                 />
               </div>
-              <div className="flex flex-1 flex-col justify-between bg-white p-6">
+              <div className="flex flex-1 flex-col justify-between p-6">
                 <div className="flex-1">
                   <a href="#" className="block">
                     <h3 className="mt-2 text-xl font-semibold leading-7 text-gray-900">
