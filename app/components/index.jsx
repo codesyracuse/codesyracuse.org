@@ -156,7 +156,7 @@ export default function Footer2({ footerNavigation }) {
               src="/images/codes.png"
               alt="CODE Syracuse logo"
             />
-            <div className="flex mx-2 mt-6 space-x-4 align-baseline md:order-2">
+            <div className="mx-2 mt-6 flex space-x-4 align-baseline md:order-2">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
@@ -189,10 +189,10 @@ export default function Footer2({ footerNavigation }) {
                 className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                 placeholder="Enter your email"
               />
-              <div className="mt-4 sm:mt-0 sm:ml-4 sm:flex-shrink-0">
+              <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center rounded-md bg-brand py-2 px-3 text-sm font-semibold text-gray-100 shadow-sm hover:bg-brand-dark hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  className="flex w-full items-center justify-center rounded-md bg-brand px-3 py-2 text-sm font-semibold text-gray-100 shadow-sm hover:bg-brand-dark hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
                   Subscribe
                 </button>

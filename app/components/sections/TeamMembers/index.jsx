@@ -31,7 +31,7 @@ export function TeamMembers({ teamMemberList, title, description }) {
                 {teamMember.role}
               </p>
             </div>
-            <div className="absolute overflow-scroll left-0 top-0 h-full w-full rounded-2xl bg-stone-800 p-4 opacity-0 transition-all duration-200 group-hover:opacity-90">
+            <div className="absolute left-0 top-0 h-full w-full overflow-scroll rounded-2xl bg-stone-800 p-4 opacity-0 transition-all duration-200 group-hover:opacity-90">
               <h3 className="text-base font-semibold leading-7 tracking-tight text-white">
                 {teamMember.name}
               </h3>

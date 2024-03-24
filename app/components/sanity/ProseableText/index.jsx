@@ -71,7 +71,9 @@ export default function ProseableText({ value = [], classes = "" }) {
             marks: {
               internalLink: ({ value, children }) => {
                 const { targetObject, button } = value;
-                if (!targetObject) { return children }
+                if (!targetObject) {
+                  return children;
+                }
 
                 const href = linkFor(targetObject);
                 const classes = button

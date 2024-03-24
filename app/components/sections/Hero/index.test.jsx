@@ -10,7 +10,7 @@ describe("Hero", () => {
 
   test("renders Hero component", () => {
     const { asFragment } = render(
-      <Hero title={title} description={blockContentDescription} />
+      <Hero title={title} description={blockContentDescription} />,
     );
     // screen.debug();
     // expect(asFragment()).toMatchSnapshot();
