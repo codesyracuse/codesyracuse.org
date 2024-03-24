@@ -10,10 +10,10 @@ export default function Header({ mainNavigation }) {
   return (
     <header className="bg-[#2925C3] z-10 text-white">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">CODE Syracuse</span>
             <img
@@ -23,7 +23,7 @@ export default function Header({ mainNavigation }) {
             />
           </a>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-8">
+        <Popover.Group className="hidden md:flex md:gap-x-8">
           {mainNavigation?.sections?.map((section) => (
             <div key={section._key}>
               {section.target || section.path ? (
@@ -90,7 +90,7 @@ export default function Header({ mainNavigation }) {
           </div>
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2.5 text-white lg:hidden"
+            className="inline-flex items-center justify-center rounded-md p-2.5 text-white md:hidden"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
