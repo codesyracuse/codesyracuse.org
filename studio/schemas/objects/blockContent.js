@@ -94,6 +94,7 @@ export default defineType({
                 options: {
                   disableNew: true,
                 },
+                validation: (Rule) => Rule.required(),
               },
             ],
           },

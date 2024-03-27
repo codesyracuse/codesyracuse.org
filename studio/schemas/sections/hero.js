@@ -51,7 +51,6 @@ export default {
         list: [{title: 'Default Component', value: 'Hero'}],
         list: [{title: 'Not as colorful', value: 'BoringHero'}],
       },
-      hidden: true,
     },
   ],
   preview: {

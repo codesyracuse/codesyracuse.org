@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "~/components/sections/Image";
-import { Layout } from "../layout";
+import { MidWidthLayout } from "../layout";
 import { SectionTitle, ColumnTitle } from "~/components/SectionTitle";
 import clsx from "clsx";
 import { Content } from "../Content";
@@ -72,7 +72,7 @@ export function TwoColumnContent({
   };
 
   return (
-    <Layout>
+    <MidWidthLayout>
       {title && <SectionTitle title={title} />}
 
       <div className="mx-auto grid max-w-2xl gap-x-8 gap-y-10 text-base leading-7 text-gray-300 lg:mx-0 lg:max-w-none lg:grid-cols-6">
@@ -99,7 +99,7 @@ export function TwoColumnContent({
           )}
         </RightColumn>
       </div>
-    </Layout>
+    </MidWidthLayout>
   );
 }
 

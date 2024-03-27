@@ -20,7 +20,7 @@ export function FullWidthContent({ title, content }) {
     <FullWidthLayout>
       {title && <SectionTitle title={title} />}
       <div className="overflow-hidden">
-        <div className="prose prose-lg mx-auto lg:max-w-none prose-headings:first:mt-0">
+        <div className="prose prose-lg mx-auto prose-headings:first:mt-0 lg:max-w-none">
           <ProseableText value={content} classes="mx-auto" />
         </div>
       </div>

@@ -1,11 +1,11 @@
-import { Layout } from "../layout";
+import { FullWidthLayout } from "../layout";
 import { PersonImage } from "~/components/PersonImage";
 import ProseableText from "~/components/sanity/ProseableText";
 import { SectionTitle } from "~/components/SectionTitle";
 
 export function Testimonials({ title, testimonialList }) {
   return (
-    <Layout>
+    <FullWidthLayout>
       <div className="">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-xl text-center">
@@ -14,14 +14,15 @@ export function Testimonials({ title, testimonialList }) {
             </h2>
             {title && <SectionTitle title={title} />}
           </div>
-          <div className="mx-auto mt-4 flow-root max-w-2xl sm:mt-5 lg:mx-0 lg:max-w-none">
+
+          <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
             <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
               {testimonialList.map((testimonial) => (
                 <div
                   key={testimonial.endorser._id}
                   className="pt-8 sm:inline-block sm:w-full sm:px-4"
                 >
-                  <figure className="rounded-2xl bg-stone-200 p-8 text-sm leading-6">
+                  <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
                     <blockquote className="text-gray-900">
                       <ProseableText
                         value={testimonial.body}
@@ -49,6 +50,6 @@ export function Testimonials({ title, testimonialList }) {
           </div>
         </div>
       </div>
-    </Layout>
+    </FullWidthLayout>
   );
 }

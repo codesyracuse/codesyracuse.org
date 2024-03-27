@@ -8,12 +8,12 @@ export default function Header({ mainNavigation }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#2925C3] z-10 text-white">
+    <header className="z-10 bg-[#2925C3] text-white">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">CODE Syracuse</span>
             <img
@@ -23,7 +23,7 @@ export default function Header({ mainNavigation }) {
             />
           </a>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-8">
+        <Popover.Group className="hidden md:flex md:gap-x-8">
           {mainNavigation?.sections?.map((section) => (
             <div key={section._key}>
               {section.target || section.path ? (
@@ -83,14 +83,14 @@ export default function Header({ mainNavigation }) {
           <div className="flex items-center gap-x-1">
             <a
               href="/donate"
-              className="rounded-md bg-brand px-3 py-2 text-sm font-semibold text-gray-50 shadow-sm hover:bg-brand-dark hover:text-white border border-black hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-dark"
+              className="rounded-md border border-black bg-brand px-3 py-2 text-sm font-semibold text-gray-50 shadow-sm hover:border-white hover:bg-brand-dark hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-dark"
             >
               Donate
             </a>
           </div>
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2.5 text-white lg:hidden"
+            className="inline-flex items-center justify-center rounded-md p-2.5 text-white md:hidden"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -105,7 +105,7 @@ export default function Header({ mainNavigation }) {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full bg-stone-900 overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-stone-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">CODE Syracuse</span>
@@ -116,7 +116,7 @@ export default function Header({ mainNavigation }) {
               />
             </a>
             <div className="flex flex-1 justify-end">
-              <div className=" flex flex-1 items-center justify-end text-white gap-x-1">
+              <div className=" flex flex-1 items-center justify-end gap-x-1 text-white">
                 <a
                   href="/donate"
                   className=" h-9 rounded-md bg-brand px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-brand-dark hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-dark"
@@ -156,7 +156,7 @@ export default function Header({ mainNavigation }) {
                               <ChevronDownIcon
                                 className={classNames(
                                   open ? "rotate-180" : "",
-                                  "h-5 w-5 flex-none"
+                                  "h-5 w-5 flex-none",
                                 )}
                                 aria-hidden="true"
                               />
