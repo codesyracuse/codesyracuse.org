@@ -1,10 +1,12 @@
 # fly.toml file generated for codesyracuse on 2023-04-19T12:02:48-04:00
 
 app = "codesyracuse"
+
 kill_signal = "SIGINT"
 kill_timeout = 5
 primary_region = "ewr"
 processes = []
+swap_size_mb = 512
 
 [env]
   PORT = "8080"
@@ -20,6 +22,7 @@ processes = []
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
+
   [services.concurrency]
     hard_limit = 25
     soft_limit = 20
