@@ -9,6 +9,8 @@ import {
   ScrollRestoration,
   useRouteError,
 } from "@remix-run/react";
+import { useLocation } from "react-router-dom";
+
 import { captureRemixErrorBoundaryError } from "@sentry/remix";
 import stylesheet from "~/tailwind.css";
 import { NotFound, ServerError } from "./components/errors";
@@ -28,6 +30,9 @@ export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export default function App() {
   const { mainNavigation } = useLoaderData();
+  const location = useLocation();
+  const onHomePage = location.pathname === "/";
+
   return (
     <html lang="en">
       <head>
@@ -37,7 +42,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Header mainNavigation={mainNavigation} />
+        <Header mainNavigation={mainNavigation} onHomePage={onHomePage} />
         <Outlet />
         <Footer />
         <ScrollRestoration />

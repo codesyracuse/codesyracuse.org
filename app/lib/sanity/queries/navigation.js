@@ -27,9 +27,3 @@ export async function getNavigation() {
 
   return { mainNavigation, footerNavigation };
 }
-
-export async function getShopNavigation() {
-  const shopNavigation = await getClient().fetch(navQuery("shopNavigation"));
-
-  return { shopNavigation };
-}

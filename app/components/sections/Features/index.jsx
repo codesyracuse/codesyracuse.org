@@ -5,7 +5,7 @@ export function Features({ title, content }) {
     <FullWidthLayout>
       <div
         id="programs"
-        className="relative px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24"
+        className="relative px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28"
       >
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">

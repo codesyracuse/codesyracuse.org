@@ -3,12 +3,18 @@ import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { classNames, pagePath } from "~/lib/utils";
+import clsx from "clsx";
 
-export default function Header({ mainNavigation }) {
+export default function Header({ mainNavigation, onHomePage }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="z-10 bg-[#2925C3] text-white">
+    <header
+      className={clsx(
+        "inset-x-0 top-0 z-50 text-white",
+        onHomePage ? "absolute" : "bg-brand-dark ",
+      )}
+    >
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8"
         aria-label="Global"

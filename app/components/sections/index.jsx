@@ -4,6 +4,7 @@ import { Faq } from "./Faq";
 import { Features } from "./Features";
 import { Hero, BoringHero } from "./Hero";
 import { Image, NoBorderImage } from "./Image";
+import { PageHeader } from "./PageHeader";
 import { TeamMembers } from "./TeamMembers";
 import { Testimonials } from "./Testimonials";
 import {
@@ -22,6 +23,7 @@ const COMPONENTS = {
   Hero: Hero,
   Image: Image,
   NoBorderImage: NoBorderImage,
+  PageHeader: PageHeader,
   TeamMembers: TeamMembers,
   Testimonials: Testimonials,
   TwoColumnContent: TwoColumnContent,

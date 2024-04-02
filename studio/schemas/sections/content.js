@@ -7,11 +7,6 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'internalTitle',
-      title: 'Internal Title (does not display)',
-      type: 'string',
-    },
-    {
       name: 'title',
       title: 'Display Title (optional)',
       type: 'string',
@@ -37,8 +32,24 @@ export default {
   ],
   preview: {
     select: {
-      title: 'internalTitle',
+      title: 'title',
+      content: 'content',
       subtitle: 'component',
+    },
+    prepare(value) {
+      const content = (value.content || []).find((content) => content._type === 'block')
+      const contentTitle = value.title
+      return {
+        title: contentTitle
+          ? contentTitle
+          : content
+            ? content.children
+                .filter((child) => child._type === 'span')
+                .map((span) => span.text)
+                .join('')
+            : 'No title',
+        subtitle: 'Content Section',
+      }
     },
   },
 }

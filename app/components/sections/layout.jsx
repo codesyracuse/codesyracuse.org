@@ -11,12 +11,7 @@ export function MidWidthLayout(props) {
 
 export function FullWidthLayout({ className, children }) {
   return (
-    <div
-      className={clsx(
-        "mx-auto py-4 first:pt-0 last:pb-0 md:py-8",
-        className,
-      )}
-    >
+    <div className={clsx("mx-auto mb-4 last:mb-0 md:mb-8", className)}>
       {children}
     </div>
   );
