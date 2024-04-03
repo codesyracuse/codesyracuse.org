@@ -1,3 +1,8 @@
+/* eslint-disable max-len */
+/* prettier-ignore */
+
+import { redirect } from "@remix-run/node";
+
 export function throwNotFound(slug) {
   throwIfMatchesRedirectRules(slug);
 
@@ -10,4 +15,11 @@ const throwIfMatchesRedirectRules = (slug) => {
   if (!slug.startsWith("/")) {
     slug = "/" + slug;
   }
+  if (redirectRules[slug]) {
+    throw redirect(redirectRules[slug], 302);
+  }
+};
+
+const redirectRules = {
+  "/programs/mentorship": "/mentorship", // new site doesn't have a /programs
 };

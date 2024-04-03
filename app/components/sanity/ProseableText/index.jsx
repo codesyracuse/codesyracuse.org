@@ -49,7 +49,7 @@ export default function ProseableText({ value = [], classes = "" }) {
       <div
         key={group[0]._key}
         className={clsx([
-          `prose max-w-none px-2 prose-li:marker:text-brand-dark prose-img:max-h-60 prose-img:rounded-xl prose-img:object-contain md:px-0 `,
+          `prose px-6 prose-li:marker:text-brand-dark prose-img:max-h-60 prose-img:rounded-xl prose-img:object-contain md:max-w-none md:px-0 `,
           classes,
         ])}
       >

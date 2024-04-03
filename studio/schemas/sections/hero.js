@@ -7,11 +7,6 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'internalTitle',
-      title: 'Internal Title (does not display)',
-      type: 'string',
-    },
-    {
       name: 'title',
       title: 'Display Title (optional)',
       type: 'string',
@@ -46,16 +41,16 @@ export default {
       title: 'Component',
       description: 'a list of eligible components for this section',
       type: 'string',
-      initialValue: 'Hero',
+      initialValue: 'BoringHero',
       options: {
-        list: [{title: 'Default Component', value: 'Hero'}],
-        list: [{title: 'Not as colorful', value: 'BoringHero'}],
+        list: [{title: 'Home Hero', value: 'Hero'}],
+        list: [{title: 'Image based Hero', value: 'BoringHero'}],
       },
     },
   ],
   preview: {
     select: {
-      title: 'internalTitle',
+      title: 'title',
       subtitle: 'component',
     },
   },

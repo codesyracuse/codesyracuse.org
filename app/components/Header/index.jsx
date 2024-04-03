@@ -16,7 +16,7 @@ export default function Header({ mainNavigation, onHomePage }) {
       )}
     >
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between px-2 py-6 sm:px-8"
         aria-label="Global"
       >
         <div className="flex md:flex-1">

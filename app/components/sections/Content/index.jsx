@@ -7,8 +7,8 @@ export function Content({ title, content, TitleComponent = SectionTitle }) {
     <Layout>
       {title && <TitleComponent title={title} />}
       <div className="overflow-hidden">
-        <div className="prose prose-lg mx-auto ">
-          <ProseableText value={content} classes="mx-auto" />
+        <div className="prose prose-lg mx-auto">
+          <ProseableText value={content} />
         </div>
       </div>
     </Layout>
@@ -21,7 +21,7 @@ export function FullWidthContent({ title, content }) {
       {title && <SectionTitle title={title} />}
       <div className="overflow-hidden">
         <div className="prose prose-lg mx-auto prose-headings:first:mt-0 lg:max-w-none">
-          <ProseableText value={content} classes="mx-auto" />
+          <ProseableText value={content} />
         </div>
       </div>
     </FullWidthLayout>
