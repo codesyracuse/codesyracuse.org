@@ -8,6 +8,7 @@ import address from './objects/address'
 import blockContent from './objects/blockContent'
 import donation from './sections/donation'
 import faq from './sections/faq'
+import features from './sections/features'
 import hero from './sections/hero'
 import image from './sections/image'
 import navigation from './documents/navigation'
@@ -31,6 +32,7 @@ export const schemaTypes = [
   content,
   donation,
   faq,
+  features,
   hero,
   image,
   navigation,

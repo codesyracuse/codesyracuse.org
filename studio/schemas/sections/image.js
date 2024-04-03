@@ -41,8 +41,10 @@ export default defineType({
       type: 'string',
       initialValue: 'Image',
       options: {
-        list: [{title: 'Default Component', value: 'Image'}],
-        list: [{title: 'Image with no border', value: 'NoBorderImage'}],
+        list: [
+          {title: 'Default Component', value: 'Image'},
+          {title: 'Image with no border', value: 'NoBorderImage'},
+        ],
       },
     }),
   ],

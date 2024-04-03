@@ -43,8 +43,10 @@ export default {
       type: 'string',
       initialValue: 'BoringHero',
       options: {
-        list: [{title: 'Home Hero', value: 'Hero'}],
-        list: [{title: 'Image based Hero', value: 'BoringHero'}],
+        list: [
+          {title: 'Home Hero', value: 'Hero'},
+          {title: 'Image based Hero', value: 'BoringHero'},
+        ],
       },
     },
   ],
